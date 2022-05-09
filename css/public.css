@@ -1,0 +1,236 @@
+/* header开始 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#img_door {
+  width: 100%;
+  height: 100%;
+  color: wheat;
+  color: whitesmoke;
+}
+
+.before-header {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  /* background-color: rgb(95, 95, 217); */
+  background-image: linear-gradient(rgb(67, 65, 65),black,rgb(72, 70, 70));
+  /* background-color: azure; */
+}
+
+#top_2 {
+  position: absolute;
+  left: 40px;
+  top: 50px;
+  width: 40%;
+  height: 50px;
+  background-color: burlywood;
+}
+
+.nav {
+  margin-top: -5px;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.nav-1,
+.nav-2 {
+  margin-top: 5px;
+  margin-left: 60px;
+  /* margin: auto; */
+}
+
+.nav-char a {
+  margin-top: 0px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-1 a,
+.nav-2 a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-line {
+  text-align: center;
+  margin-top: 4px;
+  width: 80px;
+  height: 5px;
+  background-color: #FDA30E;
+}
+
+
+.nav-line-1,
+.nav-line {
+  width: 0px;
+  height: 0px;
+  margin-top: 4px;
+  transition: all ease 0.4s;
+
+}
+
+.nav-1:hover .nav-line-1 {
+  width: 40px;
+  height: 5px;
+  background-color: #FDA30E;
+}
+
+.nav-2:hover .nav-line {
+  width: 80px;
+  height: 5px;
+  background-color: #FDA30E;
+}
+
+.nav-1:hover a,
+.nav-2:hover a {
+  color: #FDA30E;
+}
+
+/* headr结束 */
+
+
+/* 底部盒子开始 */
+.footer {
+  background-color: rgba(0, 0, 0, 0.522);
+  width: 100%;
+  height: 350px;
+  color: azure;
+}
+
+.footer-first {
+  display: flex;
+}
+
+.footer-second {
+  display: flex;
+}
+
+.first-first {
+  width: 380px;
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.first-second {
+  font-size: 20px;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.footer-second {
+  width: 100%;
+  height: 250px;
+  margin-top: 0px;
+}
+
+.second-first,
+.second-second,
+.second-third {
+  margin: 2%;
+  width: 30%;
+  height: 200px;
+}
+
+.sff,
+.ssf,
+.stf {
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sft,
+.sst,
+.stt {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sfs,
+.sss,
+.sts {
+  width: 200px;
+  height: 3px;
+  background-color: red;
+}
+
+.line {
+  width: 80%;
+  height: 3px;
+  background-color: red;
+  margin-left: 10%;
+}
+
+.third-first {
+  margin-top: 10px;
+  display: flex;
+}
+
+.third-first div {
+  margin-left: 110px;
+  width: 15%;
+  height: 20px;
+}
+
+/* 图片遮罩层开始 */
+
+
+/* 因为每个图片的大小可能不同，应该在每个图片插入的地方规定大小 */
+/* .box{
+    height: 800px;
+    width: 540px;
+    margin: 100px auto 0px;
+    background-color: white;
+} */
+
+.img {
+  position: relative;
+}
+
+.img-mask {
+  height: 800px;
+  width: 540px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 1s ease;
+}
+
+.img .img-title {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  color: #fff;
+  font-size: 20px;
+  transition: top 1s ease;
+}
+
+.img .img-intro {
+  width: 540px;
+  position: absolute;
+  top: 700px;
+  left: -100%;
+  color: #fff;
+  font-size: 20px;
+  transition: left 1s ease;
+}
+
+.img:hover .img-mask {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.img:hover .img-title {
+  top: 500px;
+}
+
+.img:hover .img-intro {
+  left: 20px;
+}
+
+/* 图片遮罩层结束 */

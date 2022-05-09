@@ -1,0 +1,268 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.color{
+    /* background-color: ; */
+    background-color: cornsilk;
+}
+.before {
+    width: 100%;
+    height: 120px;
+    /* border: 1px solid red; */
+}
+.before_{
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.twoman {
+    display: flex;
+}
+
+.liefu,
+.yuguo {
+    margin-left: 7%;
+    width: 40%;
+    height: 500px;
+    /* border: 1px solid red; */
+}
+
+.imgandchar {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 280px;
+    /* border: 1px solid black; */
+}
+
+.box{
+    width: 240px;
+}
+.ch{
+    padding-left: 20px;
+}
+
+.fourman {
+    display: flex;
+    width: 100%;
+    height: 580px;
+    /* border: 1px solid purple; */
+}
+
+.san,
+.liu,
+.yu,
+.shi {
+    width: 20%;
+    height: 580px;
+    /* border: 1px solid black; */
+    margin-left: 4%;
+}
+
+.box {
+    /* height: 800px;
+    width: 540px;
+    margin: 100px auto 0px; */
+    background-color: white;
+}
+
+.img {
+    /* margin-top: 10px; 
+     margin-left: 30px; */
+    /* padding-top: 10px;
+    padding-left: 30px; */
+    height: 240px;
+    width: 280px;
+    position: relative;
+
+}
+
+.img-mask {
+    height: 280px;
+    width: 240px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 1s ease;
+}
+
+.img .img-title {
+    position: absolute;
+    top: -30px;
+    left: 50px;
+    color: cornsilk;
+    font-size: 20px;
+    transition: top 1s ease;
+}
+
+.img:hover .img-mask {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.img:hover .img-title {
+    top: 140px;
+}
+
+/* .ch p{
+    font-size: 20px;
+    line-height: 20px;
+} */
+.ch-1 {
+    margin-top: 70px;
+    font-size: 21px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ch-2 {
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.char {
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.scene {
+    width: 280px;
+    height: 320px;
+    /* border: 1px solid red; */
+    /* margin: 100px auto 0px; */
+    perspective: 800px;
+}
+
+.scene .box-1 {
+    margin-top: 20px;
+    margin-left: 12px;
+
+    width: 280px;
+    height: 320px;
+    /* background-color: yellow; */
+    transition: all ease 1s;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.scene:hover .box-1 {
+    transform: rotateY(-180deg);
+}
+
+.box-front {
+
+    width: 280px;
+    height: 320px;
+    /* background-color: rgb(221, 16, 50); */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+.box-mid {
+    width: 280px;
+    height: 320px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateZ(-1px);
+}
+
+.box-back {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom right, pink, white, bl);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -100px;
+    transform: translateZ(-100px) rotateY(-180deg);
+}
+
+.san p,
+.liu p,
+.yu p,
+.shi p {
+    /* padding-top: 30px; */
+    /* margin-top: 30px; */
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.line1 {
+    margin-left: 35px;
+    margin-top: 20px;
+    width: 240px;
+    height: 2px;
+    background-color: black;
+}
+
+.line_ {
+    margin-top: 30px;
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid red; */
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-weight: 5px; */
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 100vh; */
+    /* background: #575d69; */
+}
+
+.button-wrapper {
+    position: relative;
+    width: 240px;
+    height: 60px;
+    text-align: center;
+}
+
+.rectangle {
+    stroke-width: 8px;
+    stroke: #FDA30E;
+    fill: transparent;
+    /* Core part of the animation */
+    stroke-dasharray: 100 500;
+    stroke-dashoffset: -372;
+}
+
+.btn {
+    color: black;
+    font-size: 18px;
+    letter-spacing: 6px;
+    position: relative;
+    top: -48px;
+}
+
+@keyframes extend {
+    to {
+        stroke-dasharray: 600;
+        stroke-dashoffset: 0;
+        stroke-width: 8;
+    }
+}
+
+.button-wrapper:hover .rectangle {
+    animation: 0.5s extend linear forwards;
+}

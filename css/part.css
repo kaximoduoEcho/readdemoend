@@ -1,0 +1,84 @@
+.title{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    /* border: 1px solid red; */
+    height: 50px;
+    margin-top: 50px;
+}
+
+#dis1,#dis2,#dis3,#dis4,#dis5,#dis6{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+}
+#dis1{
+    background-image:url("../img/book-num2.jpg");
+}
+#dis2{
+    background-image:url("../img/book-num1.jpg");
+}
+#dis3{
+    background-image: url("../img/红与黑背景.jpeg");
+}
+#dis4{
+    background-image: url("../img/小王子背景.jpeg");
+}
+#dis5{
+    background-image: url("../img/我与地坛背景.jpeg");
+}
+#dis6{
+    background-image: url("");
+}
+.box p{
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    color: white;
+}
+.box{
+    /* border: 1px solid red; */
+    margin-top: 0px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+.choose a{
+    font-size: 20px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.part-center{
+    /* background-color: rebeccapurple; */
+    position: relative;
+}
+.choose{
+    /* width: 12%; */
+    width: 200px;
+    background-color: rgb(0,0,0,0.2);
+    /* border: 1px solid red; */
+    left: 30px;
+    top: 100px;
+    position: absolute;
+}
+.choose p{
+    margin-left: 60px;
+    color: blanchedalmond;
+    font-size: 25px;
+    /* text-align: center; */
+}
+.choose div{
+    line-height: 50px;
+}
+.choose-1:hover a{
+    color: #FDA30E;
+    /* background-color: gold; */
+}
+
+
